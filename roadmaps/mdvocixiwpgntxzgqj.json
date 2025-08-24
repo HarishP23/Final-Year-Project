@@ -1,0 +1,193 @@
+{
+  "id": "mdvocixiwpgntxzgqj",
+  "roadmap": {
+    "timeline": [
+      {
+        "week": 1,
+        "title": "Week 1: Foundation in Mathematics",
+        "description": "Start with basic mathematical concepts crucial for GATE CSE.",
+        "tasks": [
+          "Review linear algebra basics (vectors, matrices, operations)",
+          "Study calculus fundamentals (limits, derivatives, integrals)",
+          "Practice basic problems from a standard textbook"
+        ]
+      },
+      {
+        "week": 2,
+        "title": "Week 2: Discrete Mathematics & Aptitude",
+        "description": "Focus on discrete mathematics and aptitude.",
+        "tasks": [
+          "Study set theory, graph theory, combinatorics",
+          "Practice aptitude questions (logical reasoning, quantitative aptitude)",
+          "Solve previous year's GATE aptitude questions"
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Week 3: Introduction to Computer Science Fundamentals",
+        "description": "Begin with core CS concepts.",
+        "tasks": [
+          "Study C programming basics (data types, control structures, functions)",
+          "Understand basic data structures (arrays, linked lists)",
+          "Practice coding problems on HackerRank or CodeChef"
+        ]
+      },
+      {
+        "week": 4,
+        "title": "Week 4: Data Structures & Algorithms I",
+        "description": "Deep dive into data structures and algorithms.",
+        "tasks": [
+          "Study stacks, queues, trees, and their applications",
+          "Implement basic algorithms (searching, sorting)",
+          "Solve algorithm problems on LeetCode or GeeksforGeeks"
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Week 5: Data Structures & Algorithms II",
+        "description": "Continue with more advanced data structures and algorithms.",
+        "tasks": [
+          "Study graphs, heaps, hash tables",
+          "Implement advanced algorithms (dynamic programming, greedy algorithms)",
+          "Solve medium-level algorithm problems"
+        ]
+      },
+      {
+        "week": 6,
+        "title": "Week 6: Databases and Operating Systems",
+        "description": "Cover fundamental concepts of databases and operating systems.",
+        "tasks": [
+          "Study relational database concepts (SQL, normalization)",
+          "Learn basic operating system concepts (processes, threads, scheduling)",
+          "Solve practice questions from previous years"
+        ]
+      },
+      {
+        "week": 7,
+        "title": "Week 7: Computer Networks & Compiler Design",
+        "description": "Study Computer Networks and Compiler Design.",
+        "tasks": [
+          "Study network protocols (TCP/IP, HTTP)",
+          "Understand compiler design basics (lexical analysis, parsing)",
+          "Solve problems related to these topics"
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Week 8: Theory of Computation & Revision I",
+        "description": "Cover Theory of Computation and begin thorough revision.",
+        "tasks": [
+          "Study automata theory, formal languages",
+          "Revise previously learned topics",
+          "Solve mock tests"
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Week 9: Revision II & Mock Tests",
+        "description": "Focused revision and intensive mock test practice.",
+        "tasks": [
+          "Revise all subjects",
+          "Take full-length mock tests",
+          "Analyze mistakes and improve weak areas"
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Week 10: Revision III & Strategy",
+        "description": "Final revision and strategizing for the exam.",
+        "tasks": [
+          "Revise all important concepts",
+          "Focus on weak areas",
+          "Develop a strong exam strategy"
+        ]
+      },
+      {
+        "week": 11,
+        "title": "Week 11: Mock Tests & Analysis",
+        "description": "Final set of mock tests and detailed analysis.",
+        "tasks": [
+          "Take full-length mock tests",
+          "Analyze performance thoroughly",
+          "Refine exam strategy"
+        ]
+      },
+      {
+        "week": 12,
+        "title": "Week 12: Final Revision & Exam Prep",
+        "description": "Final revision and exam day preparation.",
+        "tasks": [
+          "Final quick revision",
+          "Prepare all necessary materials",
+          "Relax and stay positive"
+        ]
+      }
+    ],
+    "skillsToLearn": [
+      "Mathematics for CSE",
+      "Data Structures and Algorithms",
+      "Databases",
+      "Operating Systems",
+      "Computer Networks",
+      "Compiler Design",
+      "Theory of Computation",
+      "Aptitude"
+    ],
+    "resources": [
+      {
+        "type": "book",
+        "name": "GATE CSE Textbooks",
+        "url": ""
+      },
+      {
+        "type": "website",
+        "name": "GeeksforGeeks",
+        "url": "https://www.geeksforgeeks.org/"
+      },
+      {
+        "type": "website",
+        "name": "LeetCode",
+        "url": "https://leetcode.com/"
+      },
+      {
+        "type": "website",
+        "name": "GATE Previous Year Papers",
+        "url": ""
+      }
+    ],
+    "habits": [
+      "Consistent study schedule",
+      "Regular problem solving",
+      "Thorough revision"
+    ],
+    "checklists": {
+      "daily": [
+        "2 hours of focused study",
+        "Solve at least 10 coding problems or practice questions",
+        "Review concepts learned that day"
+      ],
+      "weekly": [
+        "Take a mock test",
+        "Review weak areas identified",
+        "Plan for the next week's study"
+      ]
+    }
+  },
+  "progress": {
+    "completedSkills": [],
+    "completedHabits": [],
+    "completedTasks": {},
+    "streak": 0,
+    "lastCompletedDate": "",
+    "totalProgress": 0
+  },
+  "createdAt": "2025-08-03T12:45:27.126Z",
+  "updatedAt": "2025-08-03T12:45:27.126Z",
+  "formData": {
+    "dream": "GATE CSE exam",
+    "age": 19,
+    "skillLevel": "Beginner",
+    "dailyStudyHours": 2,
+    "timeframe": "3 months"
+  }
+}

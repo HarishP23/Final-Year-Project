@@ -1,0 +1,205 @@
+{
+  "roadmap": {
+    "timeline": [
+      {
+        "week": 1,
+        "title": "Week 1: Foundation - Mathematics",
+        "description": "Start with basic mathematical concepts crucial for GATE CSE.",
+        "tasks": [
+          "Study Sets, Relations, Functions",
+          "Practice problems on Sets and Relations",
+          "Revise high school mathematics"
+        ]
+      },
+      {
+        "week": 2,
+        "title": "Week 2: Foundation - Mathematics",
+        "description": "Continue with essential mathematical concepts.",
+        "tasks": [
+          "Study Linear Algebra (matrices, vectors)",
+          "Practice problems on Linear Algebra",
+          "Revise Calculus basics"
+        ]
+      },
+      {
+        "week": 3,
+        "title": "Week 3: Foundation - Computer Science",
+        "description": "Begin with fundamental CS concepts.",
+        "tasks": [
+          "Study Data Structures (Arrays, Linked Lists)",
+          "Implement basic data structures in C/C++",
+          "Solve coding problems on arrays and linked lists"
+        ]
+      },
+      {
+        "week": 4,
+        "title": "Week 4: Foundation - Computer Science",
+        "description": "Continue building your CS foundation.",
+        "tasks": [
+          "Study basic algorithms (searching, sorting)",
+          "Implement sorting algorithms in C/C++",
+          "Solve coding problems on sorting and searching"
+        ]
+      },
+      {
+        "week": 5,
+        "title": "Week 5:  Data Structures and Algorithms",
+        "description": "Deep dive into Data Structures and Algorithms",
+        "tasks": [
+          "Study Trees, Graphs, Heaps",
+          "Implement tree traversals and graph algorithms",
+          "Solve medium difficulty problems on LeetCode/GeeksforGeeks"
+        ]
+      },
+      {
+        "week": 6,
+        "title": "Week 6:  Data Structures and Algorithms",
+        "description": "Practice and refine Data Structures and Algorithms skills",
+        "tasks": [
+          "Solve more complex problems on LeetCode/GeeksforGeeks",
+          "Study Dynamic Programming basics",
+          "Implement basic DP solutions"
+        ]
+      },
+      {
+        "week": 7,
+        "title": "Week 7: Databases and Operating Systems",
+        "description": "Start with the basics of Databases and Operating Systems",
+        "tasks": [
+          "Study SQL basics, Relational Database concepts",
+          "Study Process Management, Deadlocks in OS",
+          "Practice SQL queries"
+        ]
+      },
+      {
+        "week": 8,
+        "title": "Week 8: Databases and Operating Systems",
+        "description": "Deepen your understanding of Databases and Operating Systems",
+        "tasks": [
+          "Study Normalization, Transaction Management",
+          "Study Memory Management, File Systems in OS",
+          "Solve OS related problems"
+        ]
+      },
+      {
+        "week": 9,
+        "title": "Week 9: Computer Networks and Computer Organization",
+        "description": "Begin learning about Computer Networks and Computer Organization",
+        "tasks": [
+          "Study TCP/IP model, Network layers",
+          "Study CPU architecture, Instruction sets",
+          "Solve basic Networking and COA problems"
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Week 10: Computer Networks and Computer Organization",
+        "description": "Strengthen understanding of Computer Networks and Computer Organization",
+        "tasks": [
+          "Study Routing protocols, Network security basics",
+          "Study Memory hierarchy, Pipelining",
+          "Solve medium level problems"
+        ]
+      },
+      {
+        "week": 11,
+        "title": "Week 11:  Theory of Computation and Discrete Mathematics",
+        "description": "Cover TOC and remaining mathematics",
+        "tasks": [
+          "Study Automata theory, Computability",
+          "Study Graph Theory, Probability",
+          "Solve problems from previous year papers"
+        ]
+      },
+      {
+        "week": 12,
+        "title": "Week 12: Revision and Mock Tests",
+        "description": "Begin with the revision of all subjects and give mock tests.",
+        "tasks": [
+          "Revise all subjects",
+          "Give at least 2 full-length mock tests",
+          "Analyze mistakes and improve weak areas"
+        ]
+      },
+      {
+        "week": 13,
+        "title": "Week 13-24: Revision and Mock Tests",
+        "description": "Continue revising, giving mock tests, and focusing on weak areas.",
+        "tasks": [
+          "Revise all subjects, focusing on weaker areas",
+          "Give regular mock tests (at least one per week)",
+          "Analyze performance, identify weak areas, and work on them"
+        ]
+      }
+    ],
+    "skillsToLearn": [
+      "Data Structures and Algorithms",
+      "Databases",
+      "Operating Systems",
+      "Computer Networks",
+      "Computer Organization and Architecture",
+      "Theory of Computation",
+      "Discrete Mathematics"
+    ],
+    "resources": [
+      {
+        "type": "book",
+        "name": "GATE CSE Books",
+        "url": ""
+      },
+      {
+        "type": "website",
+        "name": "GeeksforGeeks",
+        "url": "https://www.geeksforgeeks.org/"
+      },
+      {
+        "type": "website",
+        "name": "LeetCode",
+        "url": "https://leetcode.com/"
+      },
+      {
+        "type": "youtube",
+        "name": "GATE Tutorials",
+        "url": ""
+      }
+    ],
+    "habits": [
+      "Consistent study schedule",
+      "Regular problem-solving",
+      "Thorough revision",
+      "Time management during tests"
+    ],
+    "checklists": {
+      "daily": [
+        "4 hours of focused study",
+        "Solve coding problems",
+        "Review concepts learned"
+      ],
+      "weekly": [
+        "Complete a topic from the study plan",
+        "Give a mock test",
+        "Analyze mock test performance and plan improvements"
+      ]
+    }
+  },
+  "progress": {
+    "completedSkills": [],
+    "completedHabits": [],
+    "completedTasks": {
+      "1": [
+        "Study Sets, Relations, Functions"
+      ]
+    },
+    "streak": 1,
+    "lastCompletedDate": "2025-08-04",
+    "totalProgress": 2
+  },
+  "createdAt": "2025-08-04T05:08:43.187Z",
+  "formData": {
+    "dream": "I want to crack GATE CSE exam",
+    "age": 20,
+    "skillLevel": "Beginner",
+    "dailyStudyHours": 4,
+    "timeframe": "6 months"
+  }
+}
