@@ -13,6 +13,9 @@ export default function Home() {
               <h1 className="text-2xl font-bold text-gray-900">AI Learning Assistant</h1>
             </div>
             <nav className="hidden md:flex space-x-8">
+              <Link href="/landing" className="text-gray-600 hover:text-blue-600 transition-colors">
+                Landing
+              </Link>
               <Link href="/skillgap" className="text-gray-600 hover:text-blue-600 transition-colors">
                 Skill Gap Analysis
               </Link>

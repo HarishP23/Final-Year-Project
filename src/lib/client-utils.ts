@@ -1,4 +1,9 @@
+import { type ClassValue, clsx } from 'clsx';
 import { RoadmapData } from './ai';
+
+export function cn(...inputs: ClassValue[]) {
+  return clsx(inputs);
+}
 
 export interface UserProgress {
   completedSkills: string[];
