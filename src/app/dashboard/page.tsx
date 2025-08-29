@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { Calendar, CheckCircle, Flame, TrendingUp, Target, BookOpen } from 'lucide-react';
 import { UserProgress, calculateProgress, updateStreak } from '@/lib/client-utils';
 import { RoadmapData } from '@/lib/ai';
+import ProfileIcon from '@/components/ProfileIcon';
 
 interface SavedRoadmap {
   roadmap: RoadmapData;
@@ -152,9 +153,12 @@ export default function DashboardPage() {
               <TrendingUp className="w-8 h-8 text-orange-600 mr-3" />
               <h1 className="text-2xl font-bold text-gray-900">Learning Dashboard</h1>
             </div>
-            <a href="/" className="text-orange-600 hover:text-orange-800 transition-colors">
-              ← Back to Home
-            </a>
+            <div className="flex items-center gap-4">
+              <a href="/" className="text-orange-600 hover:text-orange-800 transition-colors">
+                ← Back to Home
+              </a>
+              <ProfileIcon />
+            </div>
           </div>
         </div>
       </header>

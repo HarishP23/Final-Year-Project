@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { CheckCircle, RotateCcw, Edit, Save } from 'lucide-react';
 import RoadmapDisplay from '@/components/RoadmapDisplay';
 import { RoadmapData } from '@/lib/ai';
+import ProfileIcon from '@/components/ProfileIcon';
 
 interface SavedRoadmap {
   roadmap: RoadmapData;
@@ -128,9 +129,12 @@ export default function RoadmapPage() {
               <CheckCircle className="w-8 h-8 text-purple-600 mr-3" />
               <h1 className="text-2xl font-bold text-gray-900">Your Learning Roadmap</h1>
             </div>
-            <a href="/" className="text-purple-600 hover:text-purple-800 transition-colors">
-              ← Back to Home
-            </a>
+            <div className="flex items-center gap-4">
+              <a href="/" className="text-purple-600 hover:text-purple-800 transition-colors">
+                ← Back to Home
+              </a>
+              <ProfileIcon />
+            </div>
           </div>
         </div>
       </header>

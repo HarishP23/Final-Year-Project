@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Brain, Target, BookOpen, TrendingUp } from 'lucide-react';
+import ProfileIcon from '@/components/ProfileIcon';
 import { redirect } from 'next/navigation';
 
 export default function Home() {
@@ -13,20 +14,23 @@ export default function Home() {
               <Brain className="w-8 h-8 text-blue-600 mr-3" />
               <h1 className="text-2xl font-bold text-gray-900">AI Learning Assistant</h1>
             </div>
-            <nav className="hidden md:flex space-x-8">
-              <Link href="/landing" className="text-gray-600 hover:text-blue-600 transition-colors">
-                Landing
-              </Link>
-              <Link href="/skillgap" className="text-gray-600 hover:text-blue-600 transition-colors">
-                Skill Gap Analysis
-              </Link>
-              <Link href="/generate" className="text-gray-600 hover:text-blue-600 transition-colors">
-                Generate Roadmap
-              </Link>
-              <Link href="/dashboard" className="text-gray-600 hover:text-blue-600 transition-colors">
-                Dashboard
-              </Link>
-            </nav>
+            <div className="flex items-center gap-4">
+              <nav className="hidden md:flex space-x-8">
+                <Link href="/landing" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  Landing
+                </Link>
+                <Link href="/skillgap" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  Skill Gap Analysis
+                </Link>
+                <Link href="/generate" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  Generate Roadmap
+                </Link>
+                <Link href="/dashboard" className="text-gray-600 hover:text-blue-600 transition-colors">
+                  Dashboard
+                </Link>
+              </nav>
+              <ProfileIcon />
+            </div>
           </div>
         </div>
       </header>

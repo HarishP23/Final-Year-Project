@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { BookOpen, Loader2, Target } from 'lucide-react';
 import FormField from '@/components/FormField';
+import ProfileIcon from '@/components/ProfileIcon';
 
 export default function GeneratePage() {
   const router = useRouter();
@@ -90,9 +91,12 @@ export default function GeneratePage() {
               <BookOpen className="w-8 h-8 text-green-600 mr-3" />
               <h1 className="text-2xl font-bold text-gray-900">Generate Learning Roadmap</h1>
             </div>
-            <a href="/" className="text-green-600 hover:text-green-800 transition-colors">
-              ← Back to Home
-            </a>
+            <div className="flex items-center gap-4">
+              <a href="/" className="text-green-600 hover:text-green-800 transition-colors">
+                ← Back to Home
+              </a>
+              <ProfileIcon />
+            </div>
           </div>
         </div>
       </header>
