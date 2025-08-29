@@ -115,7 +115,6 @@ export default function LandingPage() {
                   }}
                   className="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-red-50 transition-colors duration-200 flex items-center gap-2 hover:bg-red-50 focus:bg-red-50 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-inset"
                 >
-                  <LogOut className="w-4 h-4" />
                   Log Out
                 </button>
               </div>
@@ -124,18 +123,29 @@ export default function LandingPage() {
         ) : (
           /* Sign In / Sign Up Buttons */
           <>
-            <Link
-              href="/sign-in"
-              className="inline-flex items-center px-4 py-2 text-white font-medium rounded-lg hover:text-blue-300 transition-colors duration-200"
-            >
-              Sign In
-            </Link>
-            <Link
-              href="/sign-up"
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
-            >
-              Get Started
-            </Link>
+            {/* Sign In (blue-indigo-purple gradient frame) */}
+            <div className="group relative rounded-xl p-[1px] bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 transition-transform duration-300 hover:scale-105 hover:-translate-y-0.5">
+              <div className="pointer-events-none absolute -top-6 -left-6 h-16 w-16 rounded-full bg-white/5 blur-2xl" />
+              <div className="pointer-events-none absolute -bottom-8 -right-8 h-20 w-20 rounded-full bg-white/5 blur-2xl" />
+              <Link
+                href="/sign-in"
+                className="relative inline-flex items-center px-4 py-2 rounded-xl bg-neutral-950/90 text-white font-medium border border-white/10 hover:border-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]"
+              >
+                Sign In
+              </Link>
+            </div>
+
+            {/* Get Started (green-teal gradient frame) */}
+            <div className="group relative rounded-xl p-[1px] bg-gradient-to-br from-green-500 via-emerald-500 to-teal-500 transition-transform duration-300 hover:scale-105 hover:-translate-y-0.5">
+              <div className="pointer-events-none absolute -top-6 -left-6 h-16 w-16 rounded-full bg-white/5 blur-2xl" />
+              <div className="pointer-events-none absolute -bottom-8 -right-8 h-20 w-20 rounded-full bg-white/5 blur-2xl" />
+              <Link
+                href="/sign-up"
+                className="relative inline-flex items-center px-6 py-3 rounded-xl bg-neutral-950/90 text-white font-semibold border border-white/10 hover:border-white/20 shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]"
+              >
+                Get Started
+              </Link>
+            </div>
           </>
         )}
       </div>
@@ -199,7 +209,7 @@ export default function LandingPage() {
         </div>
       </div>
 
-      {/* Glowing Effect Demo Section */}
+      {/* Features Section */}
       <div className="py-20 px-4 bg-black">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
@@ -211,41 +221,6 @@ export default function LandingPage() {
 
       {/* World Map Demo Section */}
       <WorldMapDemo />
-
-      {/* Navigation Footer */}
-      <div className="py-16 px-4 bg-gray-900">
-        <div className="max-w-7xl mx-auto text-center">
-          <h3 className="text-2xl font-bold text-white mb-8">Ready to Get Started?</h3>
-          <div className="flex flex-wrap justify-center gap-4 mb-8">
-            <Link
-              href="/skillgap"
-              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors duration-200"
-            >
-              Analyze Skills
-            </Link>
-            <Link
-              href="/generate"
-              className="inline-flex items-center px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors duration-200"
-            >
-              Generate Roadmap
-            </Link>
-            <Link
-              href="/home"
-              className="inline-flex items-center px-6 py-3 bg-purple-600 text-white font-medium rounded-lg hover:bg-purple-700 transition-colors duration-200"
-            >
-              View Dashboard
-            </Link>
-          </div>
-          <div className="flex justify-center gap-6 text-sm text-gray-400">
-            <Link href="/sign-in" className="hover:text-white transition-colors">
-              Sign In
-            </Link>
-            <Link href="/sign-up" className="hover:text-white transition-colors">
-              Sign Up
-            </Link>
-          </div>
-        </div>
-      </div>
     </div>
   );
 } 

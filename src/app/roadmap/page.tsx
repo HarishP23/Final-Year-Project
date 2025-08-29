@@ -141,7 +141,7 @@ export default function RoadmapPage() {
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* Action Buttons */}
-        <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
+        <div className="bg-white rounded-xl shadow-lg p-6 mb-8 no-print">
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={handleSaveToDashboard}
@@ -167,31 +167,49 @@ export default function RoadmapPage() {
               <Edit className="w-5 h-5 mr-2" />
               ✏️ Modify Goal
             </button>
+
+            <button
+              onClick={() => window.print()}
+              className="inline-flex items-center px-6 py-3 bg-gray-700 text-white font-medium rounded-lg hover:bg-gray-800 transition-colors duration-200"
+            >
+              <Save className="w-5 h-5 mr-2" />
+              Save as PDF
+            </button>
           </div>
         </div>
 
-        {/* Roadmap Content */}
-        <RoadmapDisplay roadmap={roadmap} />
+        {/* Roadmap Content (Printable) */}
+        <div id="roadmap-print">
+          <RoadmapDisplay roadmap={roadmap} />
 
-        {/* Additional Actions */}
-        <div className="mt-8 bg-white rounded-xl shadow-lg p-6">
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">Next Steps</h3>
-          <div className="grid md:grid-cols-3 gap-4">
-            <div className="text-center p-4 bg-blue-50 rounded-lg">
-              <h4 className="font-semibold text-blue-900 mb-2">📅 Start Today</h4>
-              <p className="text-blue-700 text-sm">Begin with the first week's tasks</p>
-            </div>
-            <div className="text-center p-4 bg-green-50 rounded-lg">
-              <h4 className="font-semibold text-green-900 mb-2">📊 Track Progress</h4>
-              <p className="text-green-700 text-sm">Monitor your learning journey</p>
-            </div>
-            <div className="text-center p-4 bg-purple-50 rounded-lg">
-              <h4 className="font-semibold text-purple-900 mb-2">🎯 Stay Focused</h4>
-              <p className="text-purple-700 text-sm">Follow the daily checklists</p>
+          {/* Additional Actions */}
+          <div className="mt-8 bg-white rounded-xl shadow-lg p-6">
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">Next Steps</h3>
+            <div className="grid md:grid-cols-3 gap-4">
+              <div className="text-center p-4 bg-blue-50 rounded-lg">
+                <h4 className="font-semibold text-blue-900 mb-2">📅 Start Today</h4>
+                <p className="text-blue-700 text-sm">Begin with the first week's tasks</p>
+              </div>
+              <div className="text-center p-4 bg-green-50 rounded-lg">
+                <h4 className="font-semibold text-green-900 mb-2">📊 Track Progress</h4>
+                <p className="text-green-700 text-sm">Monitor your learning journey</p>
+              </div>
+              <div className="text-center p-4 bg-purple-50 rounded-lg">
+                <h4 className="font-semibold text-purple-900 mb-2">🎯 Stay Focused</h4>
+                <p className="text-purple-700 text-sm">Follow the daily checklists</p>
+              </div>
             </div>
           </div>
         </div>
       </main>
+      <style jsx global>{`
+        @media print {
+          header, .no-print { display: none !important; }
+          main { padding: 0 !important; }
+          body { background: white !important; }
+          #roadmap-print { box-shadow: none !important; }
+        }
+      `}</style>
     </div>
   );
 } 

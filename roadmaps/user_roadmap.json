@@ -3,203 +3,166 @@
     "timeline": [
       {
         "week": 1,
-        "title": "Week 1: Foundation - Mathematics",
-        "description": "Start with basic mathematical concepts crucial for GATE CSE.",
+        "title": "Week 1: Introduction to Accounting Principles",
+        "description": "Start with fundamental accounting concepts and terminology.",
         "tasks": [
-          "Study Sets, Relations, Functions",
-          "Practice problems on Sets and Relations",
-          "Revise high school mathematics"
+          "Learn basic accounting equation (Assets = Liabilities + Equity)",
+          "Understand the different types of accounts (asset, liability, equity, revenue, expense)",
+          "Study the accounting cycle (recording transactions, adjusting entries, closing entries)",
+          "Set up a dedicated study space and organize learning materials",
+          "Create a detailed weekly study schedule"
         ]
       },
       {
         "week": 2,
-        "title": "Week 2: Foundation - Mathematics",
-        "description": "Continue with essential mathematical concepts.",
+        "title": "Week 2: Financial Statements",
+        "description": "Focus on preparing and interpreting financial statements.",
         "tasks": [
-          "Study Linear Algebra (matrices, vectors)",
-          "Practice problems on Linear Algebra",
-          "Revise Calculus basics"
+          "Learn how to prepare an income statement, balance sheet, and statement of cash flows",
+          "Understand the relationships between the three financial statements",
+          "Practice creating financial statements from simple transactions",
+          "Begin working through practice problems"
         ]
       },
       {
         "week": 3,
-        "title": "Week 3: Foundation - Computer Science",
-        "description": "Begin with fundamental CS concepts.",
+        "title": "Week 3: Cost Accounting",
+        "description": "Introduce cost accounting principles and techniques.",
         "tasks": [
-          "Study Data Structures (Arrays, Linked Lists)",
-          "Implement basic data structures in C/C++",
-          "Solve coding problems on arrays and linked lists"
+          "Learn about different costing methods (job order, process costing)",
+          "Understand cost behavior (variable, fixed, mixed costs)",
+          "Practice calculating cost of goods sold and other cost-related metrics",
+          "Review previous topics to reinforce learning"
         ]
       },
       {
         "week": 4,
-        "title": "Week 4: Foundation - Computer Science",
-        "description": "Continue building your CS foundation.",
+        "title": "Week 4: Managerial Accounting",
+        "description": "Explore managerial accounting concepts and applications.",
         "tasks": [
-          "Study basic algorithms (searching, sorting)",
-          "Implement sorting algorithms in C/C++",
-          "Solve coding problems on sorting and searching"
+          "Learn about budgeting and forecasting techniques",
+          "Understand performance evaluation metrics",
+          "Practice applying managerial accounting concepts to case studies",
+          "Begin reviewing for potential quizzes/tests"
         ]
       },
       {
         "week": 5,
-        "title": "Week 5:  Data Structures and Algorithms",
-        "description": "Deep dive into Data Structures and Algorithms",
+        "title": "Week 5: Advanced Accounting Topics (I)",
+        "description": "Introduce more advanced accounting concepts.",
         "tasks": [
-          "Study Trees, Graphs, Heaps",
-          "Implement tree traversals and graph algorithms",
-          "Solve medium difficulty problems on LeetCode/GeeksforGeeks"
+          "Study inventory valuation methods (FIFO, LIFO, weighted average)",
+          "Learn about depreciation methods",
+          "Understand accounting for receivables and payables",
+          "Continue practicing problems and reviewing materials"
         ]
       },
       {
         "week": 6,
-        "title": "Week 6:  Data Structures and Algorithms",
-        "description": "Practice and refine Data Structures and Algorithms skills",
+        "title": "Week 6: Advanced Accounting Topics (II)",
+        "description": "Continue exploring advanced accounting concepts.",
         "tasks": [
-          "Solve more complex problems on LeetCode/GeeksforGeeks",
-          "Study Dynamic Programming basics",
-          "Implement basic DP solutions"
+          "Study accounting for long-term assets and liabilities",
+          "Learn about accounting for leases and bonds",
+          "Understand the basics of auditing and internal controls",
+          "Take practice exams to assess understanding"
         ]
       },
       {
         "week": 7,
-        "title": "Week 7: Databases and Operating Systems",
-        "description": "Start with the basics of Databases and Operating Systems",
+        "title": "Week 7: Review and Consolidation",
+        "description": "Review all topics covered and focus on weaker areas.",
         "tasks": [
-          "Study SQL basics, Relational Database concepts",
-          "Study Process Management, Deadlocks in OS",
-          "Practice SQL queries"
+          "Review all key concepts and formulas",
+          "Focus on areas where more understanding is needed",
+          "Work through additional practice problems",
+          "Start preparing for potential exams"
         ]
       },
       {
         "week": 8,
-        "title": "Week 8: Databases and Operating Systems",
-        "description": "Deepen your understanding of Databases and Operating Systems",
+        "title": "Week 8: Exam Preparation & Practice",
+        "description": "Dedicate time to exam preparation.",
         "tasks": [
-          "Study Normalization, Transaction Management",
-          "Study Memory Management, File Systems in OS",
-          "Solve OS related problems"
+          "Take full-length practice exams",
+          "Review weak areas identified in practice exams",
+          "Refine study techniques",
+          "Ensure a well-rested and focused exam day"
         ]
       },
       {
         "week": 9,
-        "title": "Week 9: Computer Networks and Computer Organization",
-        "description": "Begin learning about Computer Networks and Computer Organization",
+        "title": "Week 9-12: Continued Study & Exploration (Optional)",
+        "description": "Explore specialized areas or prepare for further certifications (if desired).",
         "tasks": [
-          "Study TCP/IP model, Network layers",
-          "Study CPU architecture, Instruction sets",
-          "Solve basic Networking and COA problems"
-        ]
-      },
-      {
-        "week": 10,
-        "title": "Week 10: Computer Networks and Computer Organization",
-        "description": "Strengthen understanding of Computer Networks and Computer Organization",
-        "tasks": [
-          "Study Routing protocols, Network security basics",
-          "Study Memory hierarchy, Pipelining",
-          "Solve medium level problems"
-        ]
-      },
-      {
-        "week": 11,
-        "title": "Week 11:  Theory of Computation and Discrete Mathematics",
-        "description": "Cover TOC and remaining mathematics",
-        "tasks": [
-          "Study Automata theory, Computability",
-          "Study Graph Theory, Probability",
-          "Solve problems from previous year papers"
-        ]
-      },
-      {
-        "week": 12,
-        "title": "Week 12: Revision and Mock Tests",
-        "description": "Begin with the revision of all subjects and give mock tests.",
-        "tasks": [
-          "Revise all subjects",
-          "Give at least 2 full-length mock tests",
-          "Analyze mistakes and improve weak areas"
-        ]
-      },
-      {
-        "week": 13,
-        "title": "Week 13-24: Revision and Mock Tests",
-        "description": "Continue revising, giving mock tests, and focusing on weak areas.",
-        "tasks": [
-          "Revise all subjects, focusing on weaker areas",
-          "Give regular mock tests (at least one per week)",
-          "Analyze performance, identify weak areas, and work on them"
+          "Explore areas like tax accounting, forensic accounting, or governmental accounting. Consider pursuing further certifications like CMA or CPA (long-term goal)",
+          "Continue working through practice problems and maintaining learned skills",
+          "Maintain a consistent study routine"
         ]
       }
     ],
     "skillsToLearn": [
-      "Data Structures and Algorithms",
-      "Databases",
-      "Operating Systems",
-      "Computer Networks",
-      "Computer Organization and Architecture",
-      "Theory of Computation",
-      "Discrete Mathematics"
+      "Financial Statement Preparation",
+      "Accounting Equation Understanding",
+      "Cost Accounting Principles",
+      "Managerial Accounting Techniques",
+      "Auditing Basics"
     ],
     "resources": [
       {
-        "type": "book",
-        "name": "GATE CSE Books",
-        "url": ""
+        "type": "Textbook",
+        "name": "Principles of Accounting",
+        "url": "N/A"
       },
       {
-        "type": "website",
-        "name": "GeeksforGeeks",
-        "url": "https://www.geeksforgeeks.org/"
+        "type": "Online Course",
+        "name": "AccountingCoach",
+        "url": "https://www.accountingcoach.com"
       },
       {
-        "type": "website",
-        "name": "LeetCode",
-        "url": "https://leetcode.com/"
+        "type": "YouTube Channel",
+        "name": "Accounting Explained",
+        "url": "N/A"
       },
       {
-        "type": "youtube",
-        "name": "GATE Tutorials",
-        "url": ""
+        "type": "Website",
+        "name": "Investopedia",
+        "url": "https://www.investopedia.com/"
       }
     ],
     "habits": [
       "Consistent study schedule",
-      "Regular problem-solving",
-      "Thorough revision",
-      "Time management during tests"
+      "Regular practice problems",
+      "Review and consolidation",
+      "Active recall techniques"
     ],
     "checklists": {
       "daily": [
-        "4 hours of focused study",
-        "Solve coding problems",
+        "Complete assigned readings",
+        "Solve practice problems",
         "Review concepts learned"
       ],
       "weekly": [
-        "Complete a topic from the study plan",
-        "Give a mock test",
-        "Analyze mock test performance and plan improvements"
+        "Take a practice quiz",
+        "Review weekly progress",
+        "Adjust study plan based on performance"
       ]
     }
   },
   "progress": {
     "completedSkills": [],
     "completedHabits": [],
-    "completedTasks": {
-      "1": [
-        "Study Sets, Relations, Functions"
-      ]
-    },
-    "streak": 1,
-    "lastCompletedDate": "2025-08-04",
-    "totalProgress": 2
+    "completedTasks": {},
+    "streak": 0,
+    "lastCompletedDate": "",
+    "totalProgress": 0
   },
-  "createdAt": "2025-08-04T05:08:43.187Z",
+  "createdAt": "2025-08-29T11:44:23.234Z",
   "formData": {
-    "dream": "I want to crack GATE CSE exam",
-    "age": 20,
+    "dream": "CA",
+    "age": 21,
     "skillLevel": "Beginner",
-    "dailyStudyHours": 4,
-    "timeframe": "6 months"
+    "dailyStudyHours": 3,
+    "timeframe": "3 months"
   }
 }
