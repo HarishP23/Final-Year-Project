@@ -46,7 +46,7 @@ export default function SignIn() {
         
         // Redirect to dashboard
         setTimeout(() => {
-          router.push('/dashboard');
+          router.push('/home');
         }, 2000);
       } else {
         setError(data.error || 'Sign in failed. Please try again.');

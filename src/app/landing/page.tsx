@@ -98,7 +98,7 @@ export default function LandingPage() {
                 </div>
                 
                 <Link
-                  href="/dashboard"
+                  href="/home"
                   className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors duration-200"
                   onClick={() => setShowProfileMenu(false)}
                 >
@@ -178,7 +178,7 @@ export default function LandingPage() {
               </p>
               <div className="mt-3">
                 <Link
-                  href="/dashboard"
+                  href="/home"
                   className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white text-sm font-medium rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-300 transform hover:scale-105"
                 >
                   Go to Dashboard →
@@ -230,7 +230,7 @@ export default function LandingPage() {
               Generate Roadmap
             </Link>
             <Link
-              href="/dashboard"
+              href="/home"
               className="inline-flex items-center px-6 py-3 bg-purple-600 text-white font-medium rounded-lg hover:bg-purple-700 transition-colors duration-200"
             >
               View Dashboard

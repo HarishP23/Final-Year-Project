@@ -70,7 +70,7 @@ export default function SignUp() {
         
         // Redirect to dashboard or landing page
         setTimeout(() => {
-          router.push('/dashboard');
+          router.push('/home');
         }, 2000);
       } else {
         setError(data.error || 'Sign up failed. Please try again.');
