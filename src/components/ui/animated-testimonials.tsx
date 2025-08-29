@@ -18,14 +18,29 @@ export const AnimatedTestimonials = ({
   testimonials: Testimonial[];
   autoplay?: boolean;
 }) => {
+  const safeList: Testimonial[] = Array.isArray(testimonials) ? testimonials : [];
+  const hasItems = safeList.length > 0;
   const [active, setActive] = useState(0);
 
+  // Clamp active index when list changes
+  useEffect(() => {
+    if (!hasItems) {
+      setActive(0);
+      return;
+    }
+    if (active >= safeList.length) {
+      setActive(0);
+    }
+  }, [hasItems, safeList.length]);
+
   const handleNext = () => {
-    setActive((prev) => (prev + 1) % testimonials.length);
+    if (!hasItems) return;
+    setActive((prev) => (prev + 1) % safeList.length);
   };
 
   const handlePrev = () => {
-    setActive((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+    if (!hasItems) return;
+    setActive((prev) => (prev - 1 + safeList.length) % safeList.length);
   };
 
   const isActive = (index: number) => {
@@ -33,22 +48,32 @@ export const AnimatedTestimonials = ({
   };
 
   useEffect(() => {
-    if (autoplay) {
+    if (autoplay && hasItems) {
       const interval = setInterval(handleNext, 5000);
       return () => clearInterval(interval);
     }
-  }, [autoplay]);
+  }, [autoplay, hasItems]);
 
   const randomRotateY = () => {
     return Math.floor(Math.random() * 21) - 10;
   };
+
+  if (!hasItems) {
+    return null;
+  }
+
+  const current = safeList[active];
+
+  // Cache-busting param to avoid stale dev assets when files were just added
+  const withCacheBust = (path: string, index: number) => `${path}?v=${index + 1}`;
+
   return (
     <div className="mx-auto max-w-sm px-4 py-20 font-sans antialiased md:max-w-4xl md:px-8 lg:px-12">
       <div className="relative grid grid-cols-1 gap-20 md:grid-cols-2">
         <div>
           <div className="relative h-80 w-full">
             <AnimatePresence>
-              {testimonials.map((testimonial, index) => (
+              {safeList.map((testimonial, index) => (
                 <motion.div
                   key={testimonial.src}
                   initial={{
@@ -64,7 +89,7 @@ export const AnimatedTestimonials = ({
                     rotate: isActive(index) ? 0 : randomRotateY(),
                     zIndex: isActive(index)
                       ? 40
-                      : testimonials.length + 2 - index,
+                      : safeList.length + 2 - index,
                     y: isActive(index) ? [0, -80, 0] : 0,
                   }}
                   exit={{
@@ -80,11 +105,16 @@ export const AnimatedTestimonials = ({
                   className="absolute inset-0 origin-bottom"
                 >
                   <img
-                    src={testimonial.src}
+                    src={withCacheBust(testimonial.src, index)}
                     alt={testimonial.name}
                     width={500}
                     height={500}
                     draggable={false}
+                    loading={isActive(index) ? "eager" : "lazy"}
+                    onError={(e) => {
+                      e.currentTarget.onerror = null as any;
+                      e.currentTarget.src = "/robot-assistant.png";
+                    }}
                     className="h-full w-full rounded-3xl object-cover object-center"
                   />
                 </motion.div>
@@ -113,13 +143,13 @@ export const AnimatedTestimonials = ({
             }}
           >
             <h3 className="text-2xl font-bold text-black dark:text-white">
-              {testimonials[active].name}
+              {current.name}
             </h3>
             <p className="text-sm text-gray-500 dark:text-neutral-500">
-              {testimonials[active].designation}
+              {current.designation}
             </p>
             <motion.p className="mt-8 text-lg text-gray-500 dark:text-neutral-300">
-              {testimonials[active].quote.split(" ").map((word, index) => (
+              {current.quote.split(" ").map((word, index) => (
                 <motion.span
                   key={index}
                   initial={{
