@@ -5,6 +5,7 @@ import { Upload, Target, Loader2 } from 'lucide-react';
 import FormField from '@/components/FormField';
 import SkillGapResult from '@/components/SkillGapResult';
 import { SkillGapAnalysis } from '@/lib/ai';
+import ProfileIcon from '@/components/ProfileIcon';
 
 export default function SkillGapPage() {
   const [resumeContent, setResumeContent] = useState('');
@@ -57,9 +58,12 @@ export default function SkillGapPage() {
               <Target className="w-8 h-8 text-blue-600 mr-3" />
               <h1 className="text-2xl font-bold text-gray-900">Skill Gap Analysis</h1>
             </div>
-            <a href="/" className="text-blue-600 hover:text-blue-800 transition-colors">
-              ← Back to Home
-            </a>
+            <div className="flex items-center gap-4">
+              <a href="/" className="text-blue-600 hover:text-blue-800 transition-colors">
+                ← Back to Home
+              </a>
+              <ProfileIcon />
+            </div>
           </div>
         </div>
       </header>
