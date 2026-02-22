@@ -1,11 +1,49 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
+import crypto from 'crypto';
 
-// Use hardcoded API key to bypass environment variable issues
-const apiKey = 'AIzaSyCVar5Za9e7zi2Xx47WhpTypfga5GrExMg';
+// Get API key from environment variables
+const apiKey = process.env.GEMINI_API_KEY;
 
-console.log('✅ Using API key (length:', apiKey.length, ')');
+if (!apiKey) {
+  throw new Error('GEMINI_API_KEY environment variable is not set. Please add it to your .env.local file.');
+}
 
 const genAI = new GoogleGenerativeAI(apiKey);
+
+// In-memory cache for API responses
+const apiCache = new Map<string, { data: any; timestamp: number }>();
+
+// Cache duration: 24 hours (in milliseconds)
+const CACHE_DURATION = 24 * 60 * 60 * 1000;
+
+// Generate a cache key from the input parameters
+function generateCacheKey(prefix: string, data: any): string {
+  const dataString = JSON.stringify(data);
+  const hash = crypto
+    .createHash('md5')
+    .update(dataString)
+    .digest('hex');
+  return `${prefix}:${hash}`;
+}
+
+// Get cached data if it exists and hasn't expired
+function getFromCache<T>(key: string): T | null {
+  const cached = apiCache.get(key);
+  if (!cached) return null;
+
+  // Check if cache has expired
+  if (Date.now() - cached.timestamp > CACHE_DURATION) {
+    apiCache.delete(key);
+    return null;
+  }
+
+  return cached.data as T;
+}
+
+// Store data in cache
+function setCache<T>(key: string, data: T): void {
+  apiCache.set(key, { data, timestamp: Date.now() });
+}
 
 export interface SkillGapAnalysis {
   presentSkills: string[];
@@ -49,7 +87,16 @@ export async function generateRoadmap(formData: {
 
 async function analyzeSkillGapGemini(resumeContent: string, jobRole: string): Promise<SkillGapAnalysis> {
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    // Check cache first
+    const cacheKey = generateCacheKey('skillgap', { resumeContent, jobRole });
+    const cached = getFromCache<SkillGapAnalysis>(cacheKey);
+    
+    if (cached) {
+      console.log('Returning cached skill gap analysis');
+      return cached;
+    }
+
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     const prompt = `You are a skill gap analyzer. Analyze the following resume content against the job role and provide a structured analysis.
 
@@ -108,6 +155,8 @@ IMPORTANT:
         throw new Error('Invalid skill gap analysis structure');
       }
       
+      // Cache the result
+      setCache(cacheKey, parsed);
       return parsed;
     } catch (parseError) {
       console.error('Skill Gap JSON Parse Error:', parseError);
@@ -134,7 +183,16 @@ async function generateRoadmapGemini(formData: {
   timeframe: string;
 }): Promise<RoadmapData> {
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    // Check cache first
+    const cacheKey = generateCacheKey('roadmap', formData);
+    const cached = getFromCache<RoadmapData>(cacheKey);
+    
+    if (cached) {
+      console.log('Returning cached roadmap');
+      return cached;
+    }
+
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     const prompt = `You are a learning roadmap generator. Create a detailed learning roadmap for the following goal:
 
@@ -207,6 +265,8 @@ IMPORTANT:
         throw new Error('Invalid roadmap structure');
       }
       
+      // Cache the result
+      setCache(cacheKey, parsed);
       return parsed;
     } catch (parseError) {
       console.error('JSON Parse Error:', parseError);

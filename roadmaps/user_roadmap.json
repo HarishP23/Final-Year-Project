@@ -3,226 +3,154 @@
     "timeline": [
       {
         "week": 1,
-        "title": "Week 1: Foundational Python & Math",
-        "description": "Build a strong base in Python programming and essential math concepts.",
+        "title": "Week 1: Foundational Aptitude & Basic Programming Logic",
+        "description": "Establish a strong base in Quantitative Aptitude, Reasoning, and familiarize with Programming Logic/Pseudo Code. Focus on understanding core concepts.",
         "tasks": [
-          "Complete Codecademy's Python course",
-          "Review linear algebra basics (Khan Academy)",
-          "Set up a Python development environment (Anaconda)"
+          "**Quantitative Aptitude (1.5 hours/day):** Number Systems, HCF & LCM, Percentages, Profit & Loss. Solve ~20-30 basic problems daily.",
+          "**Reasoning Ability (1 hour/day):** Series (Number/Alphabet), Coding-Decoding, Analogies, Direction Sense. Solve ~15-20 questions daily.",
+          "**Programming Logic / Pseudo Code (0.5 hours/day):** Understand basic programming constructs (variables, data types, if-else, loops). Practice writing simple pseudo-code for given problems. Watch introductory videos on C/C++/Python basic syntax (choose one language for NQT coding).",
+          "Set up a dedicated study space and environment.",
+          "Familiarize with the TCS NQT exam pattern and syllabus.",
+          "Create a daily study schedule to adhere to for the next 4 weeks."
         ]
       },
       {
         "week": 2,
-        "title": "Week 2: Probability & Statistics",
-        "description": "Focus on probability and statistics relevant to AI.",
+        "title": "Week 2: Advanced Aptitude, Reasoning & Basic Coding",
+        "description": "Deep dive into more complex aptitude and reasoning topics. Start actual coding practice with fundamental data structures and algorithms relevant to NQT.",
         "tasks": [
-          "Complete Khan Academy's Probability & Statistics course",
-          "Practice problems on probability distributions",
-          "Start exploring NumPy and Pandas for data manipulation"
+          "**Quantitative Aptitude (1 hour/day):** Time & Work, Time, Speed & Distance, Averages, Mixtures & Allegations. Solve 15-20 problems daily.",
+          "**Reasoning Ability (1 hour/day):** Syllogisms, Blood Relations, Seating Arrangements (linear). Solve 15-20 questions daily.",
+          "**Programming Logic / Coding (1 hour/day):** Practice basic coding problems in your chosen language (C/C++/Python) focusing on arrays, strings, conditional statements, and loops. Understand basic data structures like arrays and their operations. Practice debugging simple code snippets.",
+          "Dedicate 30 mins daily to Verbal Ability: Grammar rules (Subject-Verb Agreement, Tenses), Vocabulary building (5-10 words/day), Reading Comprehension (1 passage daily).",
+          "Attempt a sectional mock test (Aptitude OR Reasoning OR Coding) to gauge progress and identify weak areas."
         ]
       },
       {
         "week": 3,
-        "title": "Week 3: Introduction to Machine Learning",
-        "description": "Learn fundamental machine learning concepts and algorithms.",
+        "title": "Week 3: Problem Solving, NQT Specifics & Speed Building",
+        "description": "Focus on NQT-specific question types, advanced problem-solving techniques, and improving speed and accuracy. Integrate verbal ability more rigorously.",
         "tasks": [
-          "Complete Andrew Ng's Machine Learning course (Coursera)",
-          "Implement basic ML algorithms in Python (linear regression, logistic regression)",
-          "Explore scikit-learn library"
+          "**Quantitative Aptitude (1 hour/day):** Permutations & Combinations, Probability, Data Interpretation (Tables, Graphs). Solve 15-20 problems daily with a timer.",
+          "**Reasoning Ability (1 hour/day):** Complex Puzzles (Circular/Box arrangements), Critical Reasoning, Data Sufficiency. Solve 15-20 problems daily.",
+          "**Programming Logic / Coding (1 hour/day):** Practice NQT-style coding questions (e.g., problems involving common algorithms like sorting, searching, basic recursion). Focus on writing efficient code and understanding time/space complexity intuitively. Practice output prediction questions.",
+          "**Verbal Ability (30 mins/day):** Error Identification, Sentence Correction, Para Jumbles, advanced Reading Comprehension passages. Focus on speed and accuracy.",
+          "Attempt 2-3 previous year TCS NQT coding questions."
         ]
       },
       {
         "week": 4,
-        "title": "Week 4: Deep Learning Fundamentals",
-        "description": "Begin your journey into deep learning.",
+        "title": "Week 4: Revision, Mock Tests & Strategy",
+        "description": "Intensive revision of all topics, taking full-length mock tests, analyzing performance, and refining exam strategy.",
         "tasks": [
-          "Start with 3Blue1Brown's deep learning videos on YouTube",
-          "Understand neural networks and backpropagation",
-          "Experiment with TensorFlow/Keras for basic neural networks"
-        ]
-      },
-      {
-        "week": 5,
-        "title": "Week 5: Deep Learning Architectures (CNNs)",
-        "description": "Learn about Convolutional Neural Networks (CNNs).",
-        "tasks": [
-          "Study CNN architectures and applications",
-          "Implement a simple CNN for image classification (MNIST)",
-          "Explore different CNN architectures like AlexNet, VGG, ResNet"
-        ]
-      },
-      {
-        "week": 6,
-        "title": "Week 6: Deep Learning Architectures (RNNs)",
-        "description": "Learn about Recurrent Neural Networks (RNNs).",
-        "tasks": [
-          "Understand RNNs and their applications (NLP)",
-          "Implement a simple RNN for text generation or sentiment analysis",
-          "Explore LSTMs and GRUs"
-        ]
-      },
-      {
-        "week": 7,
-        "title": "Week 7: Reinforcement Learning Introduction",
-        "description": "Begin learning Reinforcement Learning (RL).",
-        "tasks": [
-          "Study RL concepts: agents, environments, rewards",
-          "Implement a simple RL algorithm (Q-learning)",
-          "Explore OpenAI Gym for RL environments"
-        ]
-      },
-      {
-        "week": 8,
-        "title": "Week 8: Advanced RL & Agent Design",
-        "description": "Delve deeper into RL and agent design principles.",
-        "tasks": [
-          "Learn about Deep Q-Networks (DQNs)",
-          "Explore policy gradients",
-          "Start designing simple RL agents for specific tasks"
-        ]
-      },
-      {
-        "week": 9,
-        "title": "Week 9: Natural Language Processing (NLP) basics",
-        "description": "Gain fundamental knowledge in NLP.",
-        "tasks": [
-          "Learn about NLP tasks (text classification, sentiment analysis, etc.)",
-          "Explore text preprocessing techniques",
-          "Work with NLP libraries (NLTK, spaCy)"
-        ]
-      },
-      {
-        "week": 10,
-        "title": "Week 10: Advanced NLP and Transformers",
-        "description": "Dive into advanced NLP techniques and Transformer models.",
-        "tasks": [
-          "Understand Transformer architecture (attention mechanisms)",
-          "Use pre-trained transformer models (BERT, GPT)",
-          "Build more complex NLP applications"
-        ]
-      },
-      {
-        "week": 11,
-        "title": "Week 11:  Agentic AI Project 1: Simple Agent",
-        "description": "Work on a project to integrate learned concepts.",
-        "tasks": [
-          "Design and implement a simple agentic AI for a defined task",
-          "Focus on decision-making and learning capabilities",
-          "Document the project thoroughly"
-        ]
-      },
-      {
-        "week": 12,
-        "title": "Week 12: Agentic AI Project 2: More Complex Agent",
-        "description": "Develop a more sophisticated agentic AI.",
-        "tasks": [
-          "Build a more complex agent with improved learning and decision-making",
-          "Integrate multiple techniques learned",
-          "Present the project (e.g., Github repo, report)"
-        ]
-      },
-      {
-        "week": 13,
-        "title": "Week 13 - 24: Continued Learning and Advanced Projects",
-        "description": "Focus on further specialization and development of complex projects in specific domains (Robotics, Game AI etc)",
-        "tasks": [
-          "Select a specific domain",
-          "Explore advanced resources and research papers",
-          "Develop larger and more complex agentic AI projects"
+          "**Full Revision (1 hour/day):** Revisit all formulas, concepts, and common problem-solving techniques for Aptitude, Reasoning, and Verbal. Review notes and previous mistakes.",
+          "**Mock Tests & Analysis (2 hours/day):** Take at least 3-4 full-length TCS NQT mock tests (each approx. 2-3 hours). Dedicate significant time (1 hour per mock) to analyzing your performance, understanding incorrect answers, and identifying persistent weak areas.",
+          "Focus on improving speed for sections where you are slow and accuracy for sections where you make careless mistakes.",
+          "Practice time management strategies for the actual exam.",
+          "Refine your strategy for attempting different sections (e.g., which section to attempt first, how much time to allocate to each question type).",
+          "Stay calm and confident; avoid learning new major topics in the last few days."
         ]
       }
     ],
     "skillsToLearn": [
-      "Python programming",
-      "Linear Algebra",
-      "Probability & Statistics",
-      "Machine Learning",
-      "Deep Learning",
-      "Reinforcement Learning",
-      "Natural Language Processing",
-      "Agent Design",
-      "TensorFlow/Keras",
-      "PyTorch",
-      "Data manipulation with Pandas & NumPy"
+      "Quantitative Aptitude (Number Systems, Algebra, Geometry, P&C, Probability, DI)",
+      "Reasoning Ability (Logical, Verbal, Data Interpretation, Puzzles)",
+      "Verbal Ability (Grammar, Vocabulary, Reading Comprehension, Sentence Correction)",
+      "Programming Logic (Pseudo Code, Flowcharts, Output Prediction)",
+      "Coding (Basic Data Structures - Arrays, Strings; Fundamental Algorithms - Searching, Sorting, Recursion, Problem-solving)",
+      "Time Management and Test-Taking Strategies"
     ],
     "resources": [
       {
-        "type": "online_course",
-        "name": "Andrew Ng's Machine Learning",
-        "url": "https://www.coursera.org/learn/machine-learning"
+        "type": "youtube",
+        "name": "PrepInsta",
+        "url": "https://www.youtube.com/c/PrepInsta"
       },
       {
-        "type": "online_course",
-        "name": "Deep Learning Specialization (deeplearning.ai)",
-        "url": "https://www.deeplearning.ai/deep-learning-specialization/"
+        "type": "youtube",
+        "name": "Talent Battle",
+        "url": "https://www.youtube.com/c/TalentBattleOnline"
       },
       {
-        "type": "youtube_channel",
-        "name": "3Blue1Brown",
-        "url": "https://www.youtube.com/c/3blue1brown"
+        "type": "youtube",
+        "name": "GeeksforGeeks",
+        "url": "https://www.youtube.com/c/GeeksforGeeksVideos"
+      },
+      {
+        "type": "youtube",
+        "name": "CodeWithHarry (for C/C++/Python basics)",
+        "url": "https://www.youtube.com/c/CodeWithHarry"
       },
       {
         "type": "website",
-        "name": "OpenAI Gym",
-        "url": "https://gym.openai.com/"
+        "name": "IndiaBix (Aptitude & Reasoning Practice)",
+        "url": "https://www.indiabix.com/"
       },
       {
         "type": "website",
-        "name": "Papers with Code",
-        "url": "https://paperswithcode.com/"
+        "name": "GeeksforGeeks (DSA & Coding Practice)",
+        "url": "https://www.geeksforgeeks.org/"
+      },
+      {
+        "type": "website",
+        "name": "PrepInsta (TCS NQT Specific)",
+        "url": "https://prepinsta.com/tcs-nqt/"
+      },
+      {
+        "type": "website",
+        "name": "TCS NQT Official Website (for syllabus & exam pattern)",
+        "url": "https://learning.tcsionevents.com/tcsnqt/"
+      },
+      {
+        "type": "book",
+        "name": "Quantitative Aptitude for Competitive Examinations by R.S. Aggarwal",
+        "url": "N/A (physical book)"
+      },
+      {
+        "type": "book",
+        "name": "A Modern Approach to Verbal & Non-Verbal Reasoning by R.S. Aggarwal",
+        "url": "N/A (physical book)"
       }
     ],
     "habits": [
-      "Consistent daily study",
-      "Regular coding practice",
-      "Active participation in online communities",
-      "Project-based learning",
-      "Time management"
+      "Follow a consistent daily study schedule for 3 hours.",
+      "Solve problems daily from all sections (Aptitude, Reasoning, Coding).",
+      "Analyze mistakes thoroughly and maintain an 'error log' or 'mistake notebook'.",
+      "Take short breaks (5-10 mins) after every 50-60 mins of study to avoid burnout.",
+      "Regularly revise concepts, especially formulas and shortcuts.",
+      "Stay hydrated and ensure adequate sleep."
     ],
     "checklists": {
       "daily": [
-        "Review previous day's material",
-        "Complete assigned coding exercises",
-        "Work on current project"
+        "Complete 1.5 hours of Aptitude & Reasoning practice.",
+        "Complete 0.5-1 hour of Programming Logic / Coding practice.",
+        "Dedicate 30 mins to Verbal Ability (grammar, vocab, RC).",
+        "Review notes from previous day.",
+        "Solve at least 5-10 problems from weak areas identified."
       ],
       "weekly": [
-        "Assess progress",
-        "Adjust study plan if needed",
-        "Explore relevant research papers"
+        "Attempt at least one sectional or full-length mock test.",
+        "Analyze mock test performance and identify weak topics/areas.",
+        "Revise all concepts learned during the week.",
+        "Practice previous year's NQT questions for relevant sections.",
+        "Track progress and adjust study plan if needed."
       ]
     }
   },
   "progress": {
-    "completedSkills": [
-      "Python programming",
-      "Linear Algebra",
-      "Probability & Statistics"
-    ],
-    "completedHabits": [
-      "Consistent daily study"
-    ],
-    "completedTasks": {
-      "1": [
-        "Complete Codecademy's Python course",
-        "Review linear algebra basics (Khan Academy)",
-        "Set up a Python development environment (Anaconda)"
-      ],
-      "3": [
-        "Complete Andrew Ng's Machine Learning course (Coursera)"
-      ],
-      "4": [
-        "Start with 3Blue1Brown's deep learning videos on YouTube"
-      ]
-    },
-    "streak": 1,
-    "lastCompletedDate": "2025-09-27",
-    "totalProgress": 16
+    "completedSkills": [],
+    "completedHabits": [],
+    "completedTasks": {},
+    "streak": 0,
+    "lastCompletedDate": "",
+    "totalProgress": 0
   },
-  "createdAt": "2025-09-05T04:53:07.119Z",
+  "createdAt": "2026-02-22T18:30:06.665Z",
   "formData": {
-    "dream": "Agentic Artificial Intelligence Engineer",
+    "dream": "TCS NQT exam",
+    "age": 21,
     "skillLevel": "Beginner",
     "dailyStudyHours": 3,
-    "timeframe": "6 months"
+    "timeframe": "1 month"
   }
 }
