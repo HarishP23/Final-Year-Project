@@ -130,7 +130,7 @@ export default function RoadmapPage() {
               <h1 className="text-2xl font-bold text-gray-900">Your Learning Roadmap</h1>
             </div>
             <div className="flex items-center gap-4">
-              <a href="/" className="text-purple-600 hover:text-purple-800 transition-colors">
+              <a href="/home" className="text-purple-600 hover:text-purple-800 transition-colors">
                 ← Back to Home
               </a>
               <ProfileIcon />

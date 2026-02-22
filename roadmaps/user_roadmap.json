@@ -3,166 +3,226 @@
     "timeline": [
       {
         "week": 1,
-        "title": "Week 1: Introduction to Accounting Principles",
-        "description": "Start with fundamental accounting concepts and terminology.",
+        "title": "Week 1: Foundational Python & Math",
+        "description": "Build a strong base in Python programming and essential math concepts.",
         "tasks": [
-          "Learn basic accounting equation (Assets = Liabilities + Equity)",
-          "Understand the different types of accounts (asset, liability, equity, revenue, expense)",
-          "Study the accounting cycle (recording transactions, adjusting entries, closing entries)",
-          "Set up a dedicated study space and organize learning materials",
-          "Create a detailed weekly study schedule"
+          "Complete Codecademy's Python course",
+          "Review linear algebra basics (Khan Academy)",
+          "Set up a Python development environment (Anaconda)"
         ]
       },
       {
         "week": 2,
-        "title": "Week 2: Financial Statements",
-        "description": "Focus on preparing and interpreting financial statements.",
+        "title": "Week 2: Probability & Statistics",
+        "description": "Focus on probability and statistics relevant to AI.",
         "tasks": [
-          "Learn how to prepare an income statement, balance sheet, and statement of cash flows",
-          "Understand the relationships between the three financial statements",
-          "Practice creating financial statements from simple transactions",
-          "Begin working through practice problems"
+          "Complete Khan Academy's Probability & Statistics course",
+          "Practice problems on probability distributions",
+          "Start exploring NumPy and Pandas for data manipulation"
         ]
       },
       {
         "week": 3,
-        "title": "Week 3: Cost Accounting",
-        "description": "Introduce cost accounting principles and techniques.",
+        "title": "Week 3: Introduction to Machine Learning",
+        "description": "Learn fundamental machine learning concepts and algorithms.",
         "tasks": [
-          "Learn about different costing methods (job order, process costing)",
-          "Understand cost behavior (variable, fixed, mixed costs)",
-          "Practice calculating cost of goods sold and other cost-related metrics",
-          "Review previous topics to reinforce learning"
+          "Complete Andrew Ng's Machine Learning course (Coursera)",
+          "Implement basic ML algorithms in Python (linear regression, logistic regression)",
+          "Explore scikit-learn library"
         ]
       },
       {
         "week": 4,
-        "title": "Week 4: Managerial Accounting",
-        "description": "Explore managerial accounting concepts and applications.",
+        "title": "Week 4: Deep Learning Fundamentals",
+        "description": "Begin your journey into deep learning.",
         "tasks": [
-          "Learn about budgeting and forecasting techniques",
-          "Understand performance evaluation metrics",
-          "Practice applying managerial accounting concepts to case studies",
-          "Begin reviewing for potential quizzes/tests"
+          "Start with 3Blue1Brown's deep learning videos on YouTube",
+          "Understand neural networks and backpropagation",
+          "Experiment with TensorFlow/Keras for basic neural networks"
         ]
       },
       {
         "week": 5,
-        "title": "Week 5: Advanced Accounting Topics (I)",
-        "description": "Introduce more advanced accounting concepts.",
+        "title": "Week 5: Deep Learning Architectures (CNNs)",
+        "description": "Learn about Convolutional Neural Networks (CNNs).",
         "tasks": [
-          "Study inventory valuation methods (FIFO, LIFO, weighted average)",
-          "Learn about depreciation methods",
-          "Understand accounting for receivables and payables",
-          "Continue practicing problems and reviewing materials"
+          "Study CNN architectures and applications",
+          "Implement a simple CNN for image classification (MNIST)",
+          "Explore different CNN architectures like AlexNet, VGG, ResNet"
         ]
       },
       {
         "week": 6,
-        "title": "Week 6: Advanced Accounting Topics (II)",
-        "description": "Continue exploring advanced accounting concepts.",
+        "title": "Week 6: Deep Learning Architectures (RNNs)",
+        "description": "Learn about Recurrent Neural Networks (RNNs).",
         "tasks": [
-          "Study accounting for long-term assets and liabilities",
-          "Learn about accounting for leases and bonds",
-          "Understand the basics of auditing and internal controls",
-          "Take practice exams to assess understanding"
+          "Understand RNNs and their applications (NLP)",
+          "Implement a simple RNN for text generation or sentiment analysis",
+          "Explore LSTMs and GRUs"
         ]
       },
       {
         "week": 7,
-        "title": "Week 7: Review and Consolidation",
-        "description": "Review all topics covered and focus on weaker areas.",
+        "title": "Week 7: Reinforcement Learning Introduction",
+        "description": "Begin learning Reinforcement Learning (RL).",
         "tasks": [
-          "Review all key concepts and formulas",
-          "Focus on areas where more understanding is needed",
-          "Work through additional practice problems",
-          "Start preparing for potential exams"
+          "Study RL concepts: agents, environments, rewards",
+          "Implement a simple RL algorithm (Q-learning)",
+          "Explore OpenAI Gym for RL environments"
         ]
       },
       {
         "week": 8,
-        "title": "Week 8: Exam Preparation & Practice",
-        "description": "Dedicate time to exam preparation.",
+        "title": "Week 8: Advanced RL & Agent Design",
+        "description": "Delve deeper into RL and agent design principles.",
         "tasks": [
-          "Take full-length practice exams",
-          "Review weak areas identified in practice exams",
-          "Refine study techniques",
-          "Ensure a well-rested and focused exam day"
+          "Learn about Deep Q-Networks (DQNs)",
+          "Explore policy gradients",
+          "Start designing simple RL agents for specific tasks"
         ]
       },
       {
         "week": 9,
-        "title": "Week 9-12: Continued Study & Exploration (Optional)",
-        "description": "Explore specialized areas or prepare for further certifications (if desired).",
+        "title": "Week 9: Natural Language Processing (NLP) basics",
+        "description": "Gain fundamental knowledge in NLP.",
         "tasks": [
-          "Explore areas like tax accounting, forensic accounting, or governmental accounting. Consider pursuing further certifications like CMA or CPA (long-term goal)",
-          "Continue working through practice problems and maintaining learned skills",
-          "Maintain a consistent study routine"
+          "Learn about NLP tasks (text classification, sentiment analysis, etc.)",
+          "Explore text preprocessing techniques",
+          "Work with NLP libraries (NLTK, spaCy)"
+        ]
+      },
+      {
+        "week": 10,
+        "title": "Week 10: Advanced NLP and Transformers",
+        "description": "Dive into advanced NLP techniques and Transformer models.",
+        "tasks": [
+          "Understand Transformer architecture (attention mechanisms)",
+          "Use pre-trained transformer models (BERT, GPT)",
+          "Build more complex NLP applications"
+        ]
+      },
+      {
+        "week": 11,
+        "title": "Week 11:  Agentic AI Project 1: Simple Agent",
+        "description": "Work on a project to integrate learned concepts.",
+        "tasks": [
+          "Design and implement a simple agentic AI for a defined task",
+          "Focus on decision-making and learning capabilities",
+          "Document the project thoroughly"
+        ]
+      },
+      {
+        "week": 12,
+        "title": "Week 12: Agentic AI Project 2: More Complex Agent",
+        "description": "Develop a more sophisticated agentic AI.",
+        "tasks": [
+          "Build a more complex agent with improved learning and decision-making",
+          "Integrate multiple techniques learned",
+          "Present the project (e.g., Github repo, report)"
+        ]
+      },
+      {
+        "week": 13,
+        "title": "Week 13 - 24: Continued Learning and Advanced Projects",
+        "description": "Focus on further specialization and development of complex projects in specific domains (Robotics, Game AI etc)",
+        "tasks": [
+          "Select a specific domain",
+          "Explore advanced resources and research papers",
+          "Develop larger and more complex agentic AI projects"
         ]
       }
     ],
     "skillsToLearn": [
-      "Financial Statement Preparation",
-      "Accounting Equation Understanding",
-      "Cost Accounting Principles",
-      "Managerial Accounting Techniques",
-      "Auditing Basics"
+      "Python programming",
+      "Linear Algebra",
+      "Probability & Statistics",
+      "Machine Learning",
+      "Deep Learning",
+      "Reinforcement Learning",
+      "Natural Language Processing",
+      "Agent Design",
+      "TensorFlow/Keras",
+      "PyTorch",
+      "Data manipulation with Pandas & NumPy"
     ],
     "resources": [
       {
-        "type": "Textbook",
-        "name": "Principles of Accounting",
-        "url": "N/A"
+        "type": "online_course",
+        "name": "Andrew Ng's Machine Learning",
+        "url": "https://www.coursera.org/learn/machine-learning"
       },
       {
-        "type": "Online Course",
-        "name": "AccountingCoach",
-        "url": "https://www.accountingcoach.com"
+        "type": "online_course",
+        "name": "Deep Learning Specialization (deeplearning.ai)",
+        "url": "https://www.deeplearning.ai/deep-learning-specialization/"
       },
       {
-        "type": "YouTube Channel",
-        "name": "Accounting Explained",
-        "url": "N/A"
+        "type": "youtube_channel",
+        "name": "3Blue1Brown",
+        "url": "https://www.youtube.com/c/3blue1brown"
       },
       {
-        "type": "Website",
-        "name": "Investopedia",
-        "url": "https://www.investopedia.com/"
+        "type": "website",
+        "name": "OpenAI Gym",
+        "url": "https://gym.openai.com/"
+      },
+      {
+        "type": "website",
+        "name": "Papers with Code",
+        "url": "https://paperswithcode.com/"
       }
     ],
     "habits": [
-      "Consistent study schedule",
-      "Regular practice problems",
-      "Review and consolidation",
-      "Active recall techniques"
+      "Consistent daily study",
+      "Regular coding practice",
+      "Active participation in online communities",
+      "Project-based learning",
+      "Time management"
     ],
     "checklists": {
       "daily": [
-        "Complete assigned readings",
-        "Solve practice problems",
-        "Review concepts learned"
+        "Review previous day's material",
+        "Complete assigned coding exercises",
+        "Work on current project"
       ],
       "weekly": [
-        "Take a practice quiz",
-        "Review weekly progress",
-        "Adjust study plan based on performance"
+        "Assess progress",
+        "Adjust study plan if needed",
+        "Explore relevant research papers"
       ]
     }
   },
   "progress": {
-    "completedSkills": [],
-    "completedHabits": [],
-    "completedTasks": {},
-    "streak": 0,
-    "lastCompletedDate": "",
-    "totalProgress": 0
+    "completedSkills": [
+      "Python programming",
+      "Linear Algebra",
+      "Probability & Statistics"
+    ],
+    "completedHabits": [
+      "Consistent daily study"
+    ],
+    "completedTasks": {
+      "1": [
+        "Complete Codecademy's Python course",
+        "Review linear algebra basics (Khan Academy)",
+        "Set up a Python development environment (Anaconda)"
+      ],
+      "3": [
+        "Complete Andrew Ng's Machine Learning course (Coursera)"
+      ],
+      "4": [
+        "Start with 3Blue1Brown's deep learning videos on YouTube"
+      ]
+    },
+    "streak": 1,
+    "lastCompletedDate": "2025-09-27",
+    "totalProgress": 16
   },
-  "createdAt": "2025-08-29T11:44:23.234Z",
+  "createdAt": "2025-09-05T04:53:07.119Z",
   "formData": {
-    "dream": "CA",
-    "age": 21,
+    "dream": "Agentic Artificial Intelligence Engineer",
     "skillLevel": "Beginner",
     "dailyStudyHours": 3,
-    "timeframe": "3 months"
+    "timeframe": "6 months"
   }
 }

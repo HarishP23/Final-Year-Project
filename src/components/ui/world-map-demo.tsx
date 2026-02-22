@@ -23,9 +23,8 @@ export default function WorldMapDemo() {
           </span>
         </p>
         <p className="text-sm md:text-lg text-neutral-500 max-w-2xl mx-auto py-4">
-          Break free from traditional boundaries. Work from anywhere, at the
-          comfort of your own studio apartment. Perfect for Nomads and
-          Travellers.
+          Unlock your career potential with personalized guidance and resume analysis.
+          Discover job opportunities that match your skills and aspirations, and take the next step towards your dream career.
         </p>
       </div>
       <WorldMap
@@ -64,4 +63,4 @@ export default function WorldMapDemo() {
       />
     </div>
   );
-} 
+}

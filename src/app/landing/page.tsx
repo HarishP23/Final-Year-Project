@@ -198,7 +198,7 @@ export default function LandingPage() {
           )}
           
           <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-4">
-            AI Learning Assistant
+            CareerQuest AI
           </h1>
           <p className="text-sm md:text-base text-neutral-400 mb-12">
             developed by

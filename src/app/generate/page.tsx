@@ -92,7 +92,7 @@ export default function GeneratePage() {
               <h1 className="text-2xl font-bold text-gray-900">Generate Learning Roadmap</h1>
             </div>
             <div className="flex items-center gap-4">
-              <a href="/" className="text-green-600 hover:text-green-800 transition-colors">
+              <a href="/home" className="text-green-600 hover:text-green-800 transition-colors">
                 ← Back to Home
               </a>
               <ProfileIcon />

@@ -154,7 +154,7 @@ export default function DashboardPage() {
               <h1 className="text-2xl font-bold text-gray-900">Learning Dashboard</h1>
             </div>
             <div className="flex items-center gap-4">
-              <a href="/" className="text-orange-600 hover:text-orange-800 transition-colors">
+              <a href="/home" className="text-orange-600 hover:text-orange-800 transition-colors">
                 ← Back to Home
               </a>
               <ProfileIcon />
