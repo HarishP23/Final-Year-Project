@@ -1,9 +1,13 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-// Use hardcoded API key to bypass environment variable issues
-const apiKey = 'AIzaSyCVar5Za9e7zi2Xx47WhpTypfga5GrExMg';
+// Get API key from environment variables
+const apiKey = process.env.GEMINI_API_KEY;
 
-console.log('✅ Using API key (length:', apiKey.length, ')');
+if (!apiKey) {
+  throw new Error('GEMINI_API_KEY environment variable is not set. Please add it to your .env.local file.');
+}
+
+console.log('✅ Using API key from environment (length:', apiKey.length, ')');
 
 const genAI = new GoogleGenerativeAI(apiKey);
 
