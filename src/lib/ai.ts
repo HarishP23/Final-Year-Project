@@ -3,6 +3,14 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 // Get API key from environment variables
 const apiKey = process.env.GEMINI_API_KEY;
 
+console.log('[v0] Checking GEMINI_API_KEY...');
+console.log('[v0] API Key exists:', !!apiKey);
+if (apiKey) {
+  console.log('[v0] API Key length:', apiKey.length);
+  console.log('[v0] API Key starts with:', apiKey.substring(0, 10));
+}
+console.log('[v0] All env vars available:', Object.keys(process.env).filter(k => k.includes('GEMINI') || k.includes('API')));
+
 if (!apiKey) {
   throw new Error('GEMINI_API_KEY environment variable is not set. Please add it to your .env.local file.');
 }
@@ -53,7 +61,9 @@ export async function generateRoadmap(formData: {
 
 async function analyzeSkillGapGemini(resumeContent: string, jobRole: string): Promise<SkillGapAnalysis> {
   try {
+    console.log('[v0] Attempting to get model: gemini-pro');
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    console.log('[v0] Successfully initialized gemini-pro model');
 
     const prompt = `You are a skill gap analyzer. Analyze the following resume content against the job role and provide a structured analysis.
 
@@ -138,7 +148,9 @@ async function generateRoadmapGemini(formData: {
   timeframe: string;
 }): Promise<RoadmapData> {
   try {
+    console.log('[v0] Attempting to get model: gemini-pro');
     const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    console.log('[v0] Successfully initialized gemini-pro model');
 
     const prompt = `You are a learning roadmap generator. Create a detailed learning roadmap for the following goal:
 
