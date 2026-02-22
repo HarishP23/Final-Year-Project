@@ -53,7 +53,7 @@ export async function generateRoadmap(formData: {
 
 async function analyzeSkillGapGemini(resumeContent: string, jobRole: string): Promise<SkillGapAnalysis> {
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
     const prompt = `You are a skill gap analyzer. Analyze the following resume content against the job role and provide a structured analysis.
 
@@ -138,7 +138,7 @@ async function generateRoadmapGemini(formData: {
   timeframe: string;
 }): Promise<RoadmapData> {
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
 
     const prompt = `You are a learning roadmap generator. Create a detailed learning roadmap for the following goal:
 
